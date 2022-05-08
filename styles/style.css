@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  top: auto;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+.header-section {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("/Users/devinwilliams/Desktop/Landing Page Project/images/IMG_7246.JPG");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+li a {
+  list-style: none;
+  color: black;
+  text-decoration: none;
+  margin: 18px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+}
+.head-div {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 30px;
+  float: left;
+  margin-left: 15px;
+}
+#ford-icon {
+  font-size: 20px;
+}
+section header .car-name1 {
+  display: flex;
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  font-size: 30px;
+}
+section header .car-name {
+  display: flex;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  font-size: 30px;
+}
+section header .car-name2 {
+  display: flex;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  font-size: 30px;
+}
+
+.nav-case {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 50px;
+  transform: translate(31%, -30%);
+  float: none;
+  display: block;
+}
+.nav-case-right {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.nav-case li {
+  display: inline-block;
+  padding: 0px, 20px;
+  margin-top: 3px;
+  transform: translate(80%, -20%);
+}
+.nav-case-right li {
+  margin-top: -7px;
+  display: inline;
+  float: right;
+  margin-right: 60px;
+}
+
+.div-case {
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+}
+li {
+  float: none;
+  list-style: none;
+}
+.nav-links li {
+  float: left;
+  list-style: none;
+}
+
+.nav-case-right ul li ::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background: orange;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-case-right ul li :hover::after {
+  width: 90%;
+}
+.nav-case ul li ::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background: orange;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-case ul li :hover::after {
+  width: 90%;
+}
+
+/*------ Products Section----*/
+.course {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-image: url("/Users/devinwilliams/Desktop/Landing Page Project/images/IMG_7250.JPG");
+}
+.course2 {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-image: url("/Users/devinwilliams/Desktop/Landing Page Project/images/IMG_7252.JPG");
+}
+.course3 {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-image: url("/Users/devinwilliams/Desktop/Landing Page Project/images/IMG_7251.JPG");
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 75%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+/*------Footer----*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 940px;
+  background: transparent;
+}
+.footer li {
+  float: none;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.container {
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 75%;
+  position: fixed;
+  left: 50%;
+  margin-left: -37.5%;
+  padding-bottom: 10px;
+}
+.bottom-nav li {
+  display: inline-block;
+  width: 400px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: grey;
+  border-radius: 20px;
+  margin: 10px;
+}
+.bottom-nav ul li:hover {
+  background-color: black;
+  color: white;
+}
+
+@media all and (max-width: 1644px) {
+  .bottom-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom-nav li {
+    display: inline-block;
+    width: 400px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: grey;
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 680px) and (max-width: 1124px) {
+  .bottom-nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(24%, -50%);
+  }
+}
